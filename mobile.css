@@ -1,0 +1,55 @@
+@media only screen and (max-width: 660px) {
+    .showTablet {
+        background-image: url("assets/Hero\ +\ Statistic.png");
+    }
+    .section_4 {
+        .card {
+            width: 100%;
+            max-width: none;
+            .pictureCar {
+                display: none;
+            }
+            .wrap {
+                max-width: none;
+                width: 100%;
+                padding: 24px 32px 28px 32px;
+                .block {
+                    max-width: 110px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .section_5 {
+        .wrap_2 {
+            .circle {
+                width: 416.5px;
+                height: 365.9056px;
+                background-position: center;
+            }
+            .picture {
+                width: 367.1917px;
+                height: 331.657px;
+                background-position: center;
+            }
+            .shaDow {
+                height: 107px;
+                width: 330.42px;
+                left: 38px;
+            }
+        }
+    }
+    .section_8 {
+        .card {
+            .picture {
+                background-position: right;
+            }
+            .infor {
+                .block {
+                    padding-right: 0;
+                    border-right: 0;
+                }
+            }
+        }
+    }
+}

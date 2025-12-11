@@ -1766,6 +1766,22 @@
     .t-j-between {
         justify-content: space-between;
     }
+    .t-j-center {
+        display: flex;
+        justify-content: center;
+    }
+    .t-a-center {
+        align-items: center;
+    }
+    .t-g-all {
+        gap: 60px 144px;
+    }
+    .t-text-start {
+        text-align: start;
+    }
+    .t-w100 {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 660px) {
     .PC {
@@ -1776,6 +1792,12 @@
     }
     .Mobile {
         display: flex;
+    }
+    .m-w100 {
+        width: 100%;
+    }
+    .m-g-all {
+        gap: 60px 60px;
     }
     .m-text-center {
         text-align: center;

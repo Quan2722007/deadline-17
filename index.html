@@ -31,19 +31,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gelasio:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Sansita+Swashed:wght@300&family=Sriracha&family=WindSong:wght@400;500&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="showTablet Tablet Mobile"></div>
         <header class="header j-center">
             <div class="container">
                 <div class="flex-r j-between a-center">
                     <img src="assets/Logo.svg" class="logo" />
-                    <div
-                        class="PC c-grey a-center j-between g48 f16 w6 uppercase"
-                    >
-                        <div class="flex-r g11 j-center a-center menu">
-                            <div class="">Home</div>
-                            <img
-                                src="assets/arrowMenuGray.svg"
-                                class="arrowMenu"
-                            />
+                    <div class="PC c-grey a-center j-between g48 f16 w6 uppercase">
+                        <div class="home-menu-group">
+                            <label for="nav_hidden" class="flex-r g11 j-center a-center menu">
+                                <div class="">Home</div>
+                                <img
+                                    src="assets/arrowMenuGray.svg"
+                                    class="arrowMenu"
+                                />
+                            </label>
+                            <input type="checkbox" hidden class="nav_hidden" id="nav_hidden">
+                            <div id="nav" class="nav">
+                                <ul class="flex-c g32">
+                                    <li class="f16 w6 uppercase"><div>home page 01</div></li>
+                                    <li class="f16 w6 uppercase"><div>home page 01</div></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="menu">
                             <div>About As</div>
@@ -63,28 +71,80 @@
                         <div class="f20 w7 c-grey">Contact Us</div>
                         <img src="assets/buttonHeader.svg" alt="" />
                     </div>
-                    <img src="assets/Hambuger.svg" class="Tablet Mobile hambuger">
+                    <input type="checkbox" hidden name="" id="navTablets" class="navTablets">
+                    <label for="navTablets">
+                        <img src="assets/Hambuger.svg" class="Tablet Mobile hambuger">
+                    </label>
+                        <div class="overlay"></div>
+                        <div class="navMenu">
+                            <div class="container_1">
+                                <div class="t-flex-c t-g95 m-g60">
+                                <div class="t-flex-r t-j-between">
+                                    <img src="assets/Logo.svg" class="logo" />
+                                    <label for="navTablets" class="close">
+                                        <img src="assets/closeNav.svg" >
+                                    </label>
+                                </div>
+                                <ul class="t-flex-c t-g60 m-g40">
+                                    <li class="flex-c t-g24 m-g16 nav-item-dropdown">
+                                        <input type="checkbox" hidden class="subMenuHome" id="subMenuHome">
+                                        <label for="subMenuHome" class="f24 w7 f-Atkin uppercase c-grey menu-label">
+                                            <div>home page</div>
+                                        </label>
+                                        <div class="sub-menu-list">
+                                            <ul class="t-flex-c t-g32 m-g24 ">
+                                                <li><a href="#" class="f16 w6 uppercase c-grey color">home page 01</a></li>
+                                                <li><a href="#" class="f16 w6 uppercase c-grey color">home page 02</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#" class="f24 w7 f-Atkin uppercase c-grey">ABOUT US</a></li>
+                                    <li><a href="#" class="f24 w7 f-Atkin uppercase c-grey">VEHICLES</a></li>
+                                    <li class="flex-c t-g24 m-g16 nav-item-dropdown">
+                                        <input type="checkbox" hidden class="subMenu" id="subMenu">
+                                        <label for="subMenu" class="f24 w7 f-Atkin uppercase c-grey menu-label">
+                                            <div>FEATURES</div>
+                                        </label>
+                                        <div class="sub-menu">
+                                            <ul class="t-flex-c t-g32 m-g24 ">
+                                                <li><a href="#" class="f16 w6 uppercase c-grey color">testimonials</a></li>
+                                                <li><a href="#" class="f16 w6 uppercase c-grey color">our team</a></li>
+                                                <li><a href="#" class="f16 w6 uppercase c-grey color">blog</a></li>
+                                                <li><a href="#" class="f16 w6 uppercase c-grey color">blog detail</a></li>
+                                                <li><a href="#" class="f16 w6 uppercase c-grey color">404 page</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="t-flex-r g12 button t-j-center t-a-center">
+                                <div class=" t-w7 t-f20 c-white">Book A Ride</div>
+                                <div class="line"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </header>
-        <section class="section_1 j-center">
-            <div class="picture"></div>
+        <section class="section_1 j-center t-flex-c g60 t-a-center">
+            <div class="picture PC"></div>
+            <div class="show PC"></div>
             <div class="container">
                 <div class="hero flex-c g100 j-center">
                     <div class="flex-c g60">
-                        <div class="flex-c g16">
+                        <div class="flex-c g16 t-text-center">
                             <div class="uppercase f22 w4 c-red">
                                 plan your trip now
                             </div>
                             <div
-                                class="f-Atkin uppercase f98 w7 c-black t-f70 t-flex-center m-f52"
+                                class="f-Atkin uppercase f98 w7 c-black t-f70 t-flex-center m-f52 "
                             >
                                 explore the world with us
                             </div>
                         </div>
-                        <div class="flex-r g40 a-center">
+                        <div class="flex-r g40 a-center t-j-center">
                             <div class="flex-r g12 button j-center a-center">
-                                <div class="f20 w7">Book A Ride</div>
+                                <div class="f20 w7 t-f16">Book A Ride</div>
                                 <div class="line"></div>
                             </div>
                             <div class="f24 color">OR</div>
@@ -95,10 +155,12 @@
                     </div>
                     <div class="flex-c g16 m-g20 wrap">
                         <div class="flex-r g24 a-center">
-                            <div class="uppercase f-Atkin f24 w7 c-red">
+                            <div class="uppercase f-Atkin f24 w7 c-red m-f20">
                                 what’s new
                             </div>
-                            <img src="assets/lineHero.svg" class="line" />
+                            <img src="assets/lineHero.svg" class="line PC" />
+                            <img src="assets/lineTablets.svg" class="Tablet">
+                            <img src="assets/lineMoblie.svg" class="Mobile">
                         </div>
                         <div class="f18 w4 c-gray-dam content m-f16">
                             Now You Can Rent A Car With The Various Facilities
@@ -107,25 +169,30 @@
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="pictureTablets Tablet Mobile"></div>
+            <div class="boxTablets Tablet Mobile">
+                <div class="t-f20 f-Atkin t-w7 c-white sale uppercase">Get <span class="c-red">10%</span> off For Family Car Type</div>
+                <img src="assets/carTablets (2).png" class="car">
+            </div>
+        </section>  
         <section class="section_2 j-center">
             <div class="container">
-                <div class="j-between boxSection_2 flex-r">
+                <div class="j-between boxSection_2 flex-r t-flex-wrap t-g-all t-j-center m-g-all">
                     <div class="block flex-c g12 a-center c-white">
-                        <div class="f18 w4">CAR RENTED</div>
-                        <div class="f70 f-Atkin w7">240</div>
+                        <div class="f18 w4 m-f16">CAR RENTED</div>
+                        <div class="f70 f-Atkin w7 m-f52">240</div>
                     </div>
                     <div class="block flex-c g12 a-center c-yellow">
-                        <div class="f18 w4">SATISFIED CLIENTS</div>
-                        <div class="f70 f-Atkin w7">235</div>
+                        <div class="f18 w4 m-f16">SATISFIED CLIENTS</div>
+                        <div class="f70 f-Atkin w7 m-f52">235</div>
                     </div>
                     <div class="block flex-c g12 a-center c-white">
-                        <div class="f18 w4">YEARS EXPERIENCE</div>
-                        <div class="f70 f-Atkin w7">12+</div>
+                        <div class="f18 w4 m-f16">YEARS EXPERIENCE</div>
+                        <div class="f70 f-Atkin w7 m-f52">12+</div>
                     </div>
                     <div class="block flex-c g12 a-center c-white">
-                        <div class="f18 w4">CAR TYPES</div>
-                        <div class="f70 f-Atkin w7">18</div>
+                        <div class="f18 w4 m-f16">CAR TYPES</div>
+                        <div class="f70 f-Atkin w7 m-f52">18</div>
                     </div>
                 </div>
             </div>
@@ -138,7 +205,7 @@
                 <div class="pictureSection_3"></div>
             </div>
             <div class="container">
-                <div class="box">
+                <div class="box t-flex-c t-g60">
                     <div class="flex-c g32">
                         <div class="flex-c g16 uppercase">
                             <div class="f22 w4 c-red">about us</div>
@@ -161,7 +228,7 @@
                             </div>
                         </div>
                         <div class="flex-c g32">
-                            <div class="j-between flex-r">
+                            <div class="j-between flex-r t-g20">
                                 <div class="flex-r g24 a-center">
                                     <div class="block a-center j-center">
                                         <img
@@ -189,7 +256,7 @@
                                 </div>
                             </div>
                             <div class="line"></div>
-                            <div class="flex-r j-between">
+                            <div class="flex-r j-between t-g20">
                                 <div class="g16 flex-r">
                                     <img
                                         src="assets/avatar.svg"
@@ -197,7 +264,7 @@
                                     />
                                     <div class="flex-c g8">
                                         <div
-                                            class="uppercase f-Atkin f18 w7 c-black-light m-f16"
+                                            class="uppercase f-Atkin f18 w7 c-black-light m-f16 "
                                         >
                                             james austin
                                         </div>
@@ -212,11 +279,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="Tablet wrap Mobile">
+                    <div class="Tablet wrapTablet Mobile">
                         <div class="background a-center j-center">
                             <div class="triangle"></div>
                         </div>
-                        <div class="pictureSection_3"></div>
+                        <div class="pictureSection3"></div>
                     </div>
                 </div>
             </div>
@@ -224,21 +291,21 @@
         <section class="j-center section_4">
             <div class="container">
                 <div class="flex-c g60">
-                    <div class="j-between flex-r a-end">
+                    <div class="j-between flex-r a-end t-flex-c t-g60 t-a-start">
                         <div class="flex-c g16 title">
                             <div class="uppercase f22 w4 c-red">cars list</div>
-                            <div class="uppercase f52 w7 c-black">
+                            <div class="uppercase f52 w7 c-black m-f32">
                                 choose the car that you need
                             </div>
                         </div>
                         <div class="flex-r g12 button j-center a-center">
-                            <div class="f20 w7 c-white">Discover vehicles</div>
+                            <div class="f20 w7 c-white t-f16">Discover vehicles</div>
                             <div class="line"></div>
                         </div>
                     </div>
-                    <div class="flex-c g60 j-between t-g76">
-                        <div class="flex-r g30 j-between t-flex-c t-g76">
-                            <div class="card flex-r g32 a-end t-j-between">
+                    <div class="flex-c g60 j-between t-g76 t-a-center m-g60">
+                        <div class="flex-r g30 j-between t-flex-c t-g76 m-g60 m-w100">
+                            <div class="card flex-r g32 a-end t-g60 t-j-between">
                                 <div class="pictureCar">
                                     <img
                                         src="assets/car1.png"
@@ -337,7 +404,7 @@
                                     20% Off
                                 </div>
                             </div>
-                            <div class="card flex-r g32 a-end">
+                            <div class="card flex-r g32 a-end t-g60 t-j-between">
                                 <div class="pictureCar">
                                     <img
                                         src="assets/car2.png"
@@ -441,8 +508,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex-r g30 j-between t-flex-c t-g76">
-                            <div class="card flex-r g32 a-end">
+                        <div class="flex-r g30 j-between t-flex-c t-g76 m-g60 m-w100">
+                            <div class="card flex-r g32 a-end t-g76 t-j-between m-g60">
                                 <div class="pictureCar">
                                     <img
                                         src="assets/car3.png"
@@ -541,7 +608,7 @@
                                     10% Off
                                 </div>
                             </div>
-                            <div class="card flex-r g32 a-end">
+                            <div class="card flex-r g32 a-end t-g60 t-j-between">
                                 <div class="pictureCar">
                                     <img
                                         src="assets/car4.png"
@@ -653,13 +720,13 @@
                             <div class="uppercase f22 w4 c-red text-center">
                                 why choose us
                             </div>
-                            <div class="f52 w7 uppercase f-Atkin c-black f32">
+                            <div class="f52 w7 uppercase f-Atkin c-black f32 t-text-center">
                                 Providing Reliable Car Rentals
                             </div>
                         </div>
                     </div>
-                    <div class="flex-r">
-                        <div class="wrap_1 flex-c j-between">
+                    <div class="flex-r t-flex-c t-g60">
+                        <div class="wrap_1 flex-c j-between  t-g32">
                             <div class="flex-r g24 a-start">
                                 <div class="block a-center j-center">
                                     <img src="assets/map.svg" class="icon" />
@@ -698,13 +765,53 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="Tablet Mobile g24 t-a-start">
+                                <div class="block a-center j-center block--change">
+                                    <img src="assets/speed.svg" class="icon" />
+                                </div>
+                                <div class="flex-c g12 infor infor--change a-end t-a-start">
+                                    <div
+                                        class="f-Atkin f20 c-black-light uppercase m-f18 w7"
+                                    >
+                                        reserve anytime
+                                    </div>
+                                    <div class="f18 w4 c-gray-dam text-end t-text-start m-f16">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Tablet Mobile g24 t-a-start">
+                                <div
+                                    class="block a-center j-center block--change"
+                                >
+                                    <img src="assets/people.svg" class="icon" />
+                                </div>
+                                <div class="flex-c g12 infor infor--change a-end t-a-start">
+                                    <div
+                                        class="f-Atkin f20 c-black uppercase m-f18 w7"
+                                    >
+                                        24/7 support
+                                    </div>
+                                    <div class="f18 w4 c-gray-dam text-end t-text-start m-f16">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="wrap_2">
-                            <div class="circle" /></div>
-                            <div class="picture" /></div>
-                            <div class="shaDow"></div>
-                        </div>
-                        <div class="wrap_1 flex-c j-between">
+                        <!-- <div class="t-j-center"> -->
+                            <div class="wrap_2">
+                                <div class="circle" /></div>
+                                <div class="picture" /></div>
+                                <div class="shaDow"></div>
+                            </div>
+                        <!-- </div> -->
+                        <div class="wrap_1 flex-c j-between t-g32 PC">
                             <div class="flex-r g24 a-start">
                                 <div class="block a-center j-center block--change">
                                     <img src="assets/speed.svg" class="icon" />
@@ -787,9 +894,9 @@
                 </div>
             </div>
         </section>
-        <section class="section_7 j-center">
+        <section class="section_7 j-center ">
             <div class="container">
-                <div class="flex-r g30 j-between a-center">
+                <div class="flex-r g30 j-between a-center t-flex-c t-g60 t-a-start">
                     <div class="flex-c g60 box_1">
                         <div class="flex-c g32">
                             <div class="flex-c g16">
@@ -799,7 +906,7 @@
                             <div class="f18 w4 c-gray-dam">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                         </div>
                         <div class="flex-r g12 button j-center a-center">
-                            <div class="f20 w7 c-white">Discover more</div>
+                            <div class="f20 w7 c-white t-f16">Discover more</div>
                             <div class="line"></div>
                         </div>  
                     </div>
@@ -859,7 +966,7 @@
                         <div class="f22 w4 c-red uppercase">blog & news</div>
                         <div class="f-Atkin f52 w7 c-black u m-f32 uppercase">our recently post</div>
                     </div>
-                    <div class=" flex-r g30 j-between">
+                    <div class=" flex-r g30 j-between t-flex-c t-a-center">
                         <div class="card">
                             <div class="picture"></div>
                             <div class="flex-c g24 a-center infor">
@@ -871,13 +978,13 @@
                                     <div class="f18 w4 c-gray-dam Mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                                 </div>
                                 <div class="line"></div>
-                                <div class="flex-r g36">
-                                    <div class="flex-r g16 a-center">
+                                <div class="flex-r g36 t-j-between t-w100">
+                                    <div class="flex-r g16 a-center ">
                                         <div class="flex-r g12 a-center block">
                                             <img src="assets/cardAvatar.png" class="avatar">
                                             <div class="f14 w4 c-gray-dam">Abigail Barnes</div>
                                         </div>
-                                        <div class="flex-r g12 a-center">
+                                        <div class="PC Tablet g12 a-center">
                                             <img src="assets/calen.svg" class="calen">
                                             <div class="f14 w4 c-gray-dam">10 March 2024</div>
                                         </div>
@@ -901,13 +1008,13 @@
                                     <div class="f18 w4 c-gray-dam Mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                                 </div>
                                 <div class="line"></div>
-                                <div class="flex-r g36">
+                                <div class="flex-r g36 t-j-between t-w100">
                                     <div class="flex-r g16 a-center">
                                         <div class="flex-r g12 a-center block">
                                             <img src="assets/cardAvatar.png" class="avatar">
                                             <div class="f14 w4 c-gray-dam">Abigail Barnes</div>
                                         </div>
-                                        <div class="flex-r g12 a-center">
+                                        <div class="PC Tablet g12 a-center ">
                                             <img src="assets/calen.svg" class="calen">
                                             <div class="f14 w4 c-gray-dam">10 March 2024</div>
                                         </div>
@@ -923,7 +1030,7 @@
                     </div>
                     <div class="j-center">
                         <div class="flex-r g12 button j-center a-center">
-                            <div class="f20 w7">Discover more blog</div>
+                            <div class="f20 w7 t-f16">Discover more blog</div>
                             <div class="line"></div>
                         </div>  
                     </div>

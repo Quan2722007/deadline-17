@@ -1,0 +1,213 @@
+@media only screen and (max-width: 1024px) {
+    .showTablet {
+        z-index: 45;
+        position: absolute;
+        top: 0;
+        background-image: url("assets/Hero\ Section_tablet.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1184px;
+        width: 100%;
+    }
+    .header {
+        .hambuger {
+            width: 32px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .navTablets:checked ~ .navMenu {
+            display: block;
+        }
+        .navTablets:checked ~ .overlay {
+            display: block;
+        }
+        .navTablets:checked ~ .close {
+            display: block;
+        }
+        .container_1 {
+            max-width: 1024px;
+            width: 100%;
+        }
+        .subMenuHome:checked ~ .sub-menu-list {
+            display: flex;
+        }
+        .subMenu:checked ~ .sub-menu {
+            display: flex;
+        }
+        .navMenu {
+            .sub-menu-list {
+                display: none;
+            }
+            .menu-label {
+                cursor: pointer;
+                display: block;
+            }
+            .menu-label:hover {
+                color: #fa1d1d;
+            }
+            .sub-menu {
+                display: none;
+            }
+        }
+    }
+    .section_1 {
+        .hero {
+            padding: 80px 0 0 0;
+            width: 100%;
+            .button {
+                max-width: 207px;
+                height: 52px;
+            }
+            .circle {
+                width: 52px;
+                height: 52px;
+            }
+            .wrap {
+                max-width: none;
+            }
+        }
+
+        .pictureTablets {
+            width: 100%;
+            height: 617px;
+            background-image: url("assets/tabletsCar.png");
+            background-size: cover;
+            object-fit: cover;
+            background-position: left;
+        }
+        .boxTablets {
+            padding: 32px 74px 32px 32px;
+            position: absolute;
+            width: 322.3559px;
+            height: 139px;
+            bottom: 0;
+            right: 0;
+            clip-path: polygon(
+                0% 25.06%,
+                12.42% 0%,
+                100% 0%,
+                100% 100%,
+                0% 100%
+            );
+            background-color: #020920;
+            .sale {
+                width: 176px;
+                height: 75px;
+            }
+            .car {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    .section_2 {
+        .block {
+            width: calc((100% - 144px) / 2);
+            height: auto;
+        }
+    }
+    .section_3 {
+        .box {
+            max-width: none;
+            width: 100%;
+        }
+        .wrapTablet {
+            width: 100%;
+            height: 404px;
+            position: relative;
+            .background {
+                top: 0;
+                left: 50%;
+                z-index: 10;
+                position: absolute;
+                width: 68px;
+                height: 68px;
+                background-color: #ff9d29;
+                .triangle {
+                    width: 24px;
+                    height: 24px;
+                    background-color: white;
+                    clip-path: polygon(100% 50%, 0 0, 0 100%);
+                }
+            }
+            .pictureSection3 {
+                width: 100%;
+                height: 370px;
+                position: absolute;
+                bottom: 0;
+                z-index: 5;
+                background-image: url("assets/section3Tablets.png");
+                background-size: cover;
+                background-position: center;
+                object-fit: cover;
+            }
+        }
+    }
+    .section_4 {
+        .title {
+            max-width: none;
+        }
+        .button {
+            width: 247px;
+            height: 52px;
+        }
+        .card {
+            max-width: 623.99658203125px;
+            width: 100%;
+            .wrap {
+                max-width: 280.9101867675781px;
+                padding: 24px 34px 28px 0;
+                margin-right: 0;
+            }
+        }
+    }
+    .section_5 {
+        .wrap_1 {
+            order: 1;
+            max-width: none;
+            width: 100%;
+            height: auto;
+            .infor {
+                max-width: none;
+            }
+            .infor--change {
+                order: 2;
+            }
+            .block--change {
+                order: 1;
+            }
+        }
+        .wrap_2 {
+            order: 0;
+            margin: 0 auto;
+        }
+    }
+    .section_7 {
+        .box_1 {
+            max-width: none;
+            .button {
+                max-width: 223px;
+                height: 52px;
+            }
+        }
+        .box_2 {
+            max-width: none;
+        }
+    }
+    .section_8 {
+        .card {
+            max-width: 664px;
+            width: 100%;
+        }
+        .button {
+            background-color: #ff9d29;
+            color: white;
+            max-width: 262px;
+            height: 52px;
+            .line {
+                border: 2px solid white;
+            }
+        }
+    }
+}

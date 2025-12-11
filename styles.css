@@ -29,6 +29,50 @@ body {
         width: 282px;
         height: 44px;
     }
+    .home-menu-group {
+        position: relative;
+    }
+    .nav_hidden:checked ~ .nav {
+        display: flex;
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        top: 50px;
+        transform: translate(-43%);
+        left: 50%;
+        z-index: 50;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 134px;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 24px 0px #d6d6d64d;
+        li {
+            list-style: none;
+            cursor: pointer;
+        }
+        li:hover {
+            color: #ff9d29;
+        }
+        li > div {
+            position: relative;
+            display: inline-block;
+        }
+        li > div::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            height: 2px;
+            width: 0;
+            background-color: #ff9d29;
+            transition: width 0.3s ease;
+        }
+        li:hover > div::after {
+            width: 30%;
+        }
+    }
     .menu {
         cursor: pointer;
     }
@@ -61,6 +105,85 @@ body {
         filter: brightness(0) saturate(100%) invert(58%) sepia(85%)
             saturate(3996%) hue-rotate(352deg) brightness(101%) contrast(105%);
     }
+    .overlay {
+        display: none;
+        z-index: 80;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+    .navMenu {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 32px 72px;
+        background-color: white;
+        .close {
+            display: block;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+        }
+        li {
+            list-style: none;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+            }
+        }
+        li:hover {
+            color: #ff9d29;
+        }
+        li > a {
+            position: relative;
+            display: inline-block;
+        }
+        li > a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            height: 2px;
+            width: 0;
+            background-color: #ff9d29;
+            transition: width 0.3s ease;
+        }
+        li:hover > a::after {
+            width: 30%;
+        }
+        .nav-item-dropdown {
+            .color:hover {
+                color: #ff9d29;
+            }
+        }
+        a:hover {
+            color: #fa1d1d;
+        }
+        .button {
+            clip-path: polygon(
+                100% 23.54%,
+                100% 100%,
+                7.12% 100%,
+                0% 77.08%,
+                0% 0%,
+                93.82% 0%
+            );
+            background-color: #ff9d29;
+            width: 100%;
+            height: 67px;
+            color: white;
+            .line {
+                width: 32px;
+                border: 2px solid white;
+            }
+        }
+    }
 }
 .section_1 {
     background-color: #f2f4f9;
@@ -71,9 +194,22 @@ body {
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right;
         position: absolute;
         right: 0;
+    }
+    .show {
+        background-image: url("assets/Hero\ Section.png");
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
     .hero {
         height: auto;
@@ -127,6 +263,10 @@ body {
 .section_2 {
     background-color: #020920;
     padding: 60px 0;
+    .block {
+        width: 160px;
+        height: 117px;
+    }
 }
 .section_3 {
     position: relative;
@@ -241,7 +381,7 @@ body {
         }
         .wrap {
             max-width: 253px;
-            width: 100%;
+            width: 50%;
             height: auto;
             padding: 24px 0 28px 0;
             margin-right: 10px;
@@ -250,7 +390,8 @@ body {
                 border: 1px solid #bdbdbd;
             }
             .block {
-                width: calc((100% - 32px) / 2);
+                max-width: 110px;
+                width: 100%;
                 height: 24px;
                 .icon {
                     width: 24px;
